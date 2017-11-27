@@ -23,7 +23,14 @@ class ViewController: UIViewController {
                 ModalViewController {
                 modalControler.delegate = self
             }
+        } else if segue.identifier == "push" {
+            let destination = segue.destination
+            if let secondController = destination as? SecondViewController
+            {
+                secondController.message = "Hey, salut tout le monde"
+            }
         }
+        
     }
 
     override func didReceiveMemoryWarning() {
