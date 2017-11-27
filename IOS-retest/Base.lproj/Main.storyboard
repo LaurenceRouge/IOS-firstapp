@@ -27,14 +27,14 @@
                                 <rect key="frame" x="10" y="484" width="130" height="30"/>
                                 <state key="normal" title="Voici mon bouton 1"/>
                                 <connections>
-                                    <segue destination="cOB-8w-Lwe" kind="show" id="JVA-Px-r95"/>
+                                    <segue destination="cOB-8w-Lwe" kind="show" identifier="push" id="JVA-Px-r95"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coh-vE-wKb">
                                 <rect key="frame" x="258" y="484" width="107" height="30"/>
                                 <state key="normal" title="Voici mon btn 2"/>
                                 <connections>
-                                    <segue destination="hPJ-Nr-TnX" kind="presentation" id="ebM-jj-hg6"/>
+                                    <segue destination="hPJ-Nr-TnX" kind="presentation" identifier="modal" id="ebM-jj-hg6"/>
                                 </connections>
                             </button>
                         </subviews>

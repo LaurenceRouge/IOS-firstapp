@@ -14,6 +14,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    //Appeler à chaque action, changement de page définir que c'est ce controller qui va écouter le message
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "modal" {
+            let destination = segue.destination
+            if let modalControler = destination as?
+                ModalViewController {
+                modalControler.delegate = self
+            }
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -21,5 +32,15 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+//Ajouter la fonctionnalité à mon ViewController
+extension ViewController: ModalViewControllerDelegate{
+    func shoulCloseMyself(modal: ModalViewController) {
+        //Auto-destruction de ModalViewController
+        modal.dismiss(animated: true){
+            print("C'est OK")
+        }
+    }
 }
 

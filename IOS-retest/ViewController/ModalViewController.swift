@@ -8,9 +8,18 @@
 
 import UIKit
 
+//Créer le protocol : Delegate close to ViewController
+protocol ModalViewControllerDelegate {
+    func shoulCloseMyself(modal: ModalViewController)
+    
+    
+}
 class ModalViewController: UIViewController {
 
     @IBOutlet weak var CloseButton: UIButton!
+    
+    //Apple va créer le delegate vide par défaut
+    var delegate: ModalViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,9 +48,15 @@ class ModalViewController: UIViewController {
     */
     @IBAction func didTapOnClose(_ sender: Any) {
         print("Close")
-        self.dismiss(animated: true){
-            print("C'est OK")
+        
+        if let monDelegate = delegate {
+            monDelegate.shoulCloseMyself(modal: self)
         }
+        
+        //Auto-destruction de ModalViewController
+//        self.dismiss(animated: true){
+//            print("C'est OK")
+//        }
     }
     
 }
