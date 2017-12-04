@@ -1,0 +1,6 @@
+framework module Pods_IOS_retest {
+  umbrella header "Pods-IOS-retest-umbrella.h"
+
+  export *
+  module * { export * }
+}
