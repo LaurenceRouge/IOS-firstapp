@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290EE1271FD58095005EDE6F /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290EE1261FD58095005EDE6F /* UserManager.swift */; };
+		290EE1291FD58677005EDE6F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290EE1281FD58677005EDE6F /* User.swift */; };
 		2973D04D1FD53C9900E74BA6 /* SerieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2973D04C1FD53C9900E74BA6 /* SerieViewController.swift */; };
 		2973D0501FD53ED300E74BA6 /* SerieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2973D04F1FD53ED300E74BA6 /* SerieTableViewCell.swift */; };
 		2973D0531FD5447500E74BA6 /* Serie.swif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2973D0521FD5447500E74BA6 /* Serie.swif.swift */; };
+		29865FE71FDE797C009F145E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29865FE51FDE797C009F145E /* Model.xcdatamodeld */; };
+		29865FEA1FDE7EA7009F145E /* DatabaseGrosPate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29865FE91FDE7EA7009F145E /* DatabaseGrosPate.swift */; };
+		29865FEC1FDE8CDC009F145E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29865FEB1FDE8CDB009F145E /* GoogleService-Info.plist */; };
 		2992441D1FCC1C02009D1476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2992441C1FCC1C02009D1476 /* AppDelegate.swift */; };
 		2992441F1FCC1C02009D1476 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2992441E1FCC1C02009D1476 /* ViewController.swift */; };
 		299244221FCC1C02009D1476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299244201FCC1C02009D1476 /* Main.storyboard */; };
@@ -24,9 +29,14 @@
 
 /* Begin PBXFileReference section */
 		1C4EAC2D1415603E46ADB6E7 /* Pods_IOS_retest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_retest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		290EE1261FD58095005EDE6F /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		290EE1281FD58677005EDE6F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2973D04C1FD53C9900E74BA6 /* SerieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieViewController.swift; sourceTree = "<group>"; };
 		2973D04F1FD53ED300E74BA6 /* SerieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieTableViewCell.swift; sourceTree = "<group>"; };
 		2973D0521FD5447500E74BA6 /* Serie.swif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swif.swift; sourceTree = "<group>"; };
+		29865FE61FDE797C009F145E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		29865FE91FDE7EA7009F145E /* DatabaseGrosPate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseGrosPate.swift; sourceTree = "<group>"; };
+		29865FEB1FDE8CDB009F145E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		299244191FCC1C01009D1476 /* IOS-retest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-retest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2992441C1FCC1C02009D1476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2992441E1FCC1C02009D1476 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +72,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		290EE1251FD58081005EDE6F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				290EE1261FD58095005EDE6F /* UserManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		2973D04E1FD53EB900E74BA6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,8 +92,17 @@
 			isa = PBXGroup;
 			children = (
 				2973D0521FD5447500E74BA6 /* Serie.swif.swift */,
+				290EE1281FD58677005EDE6F /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		29865FE81FDE7E72009F145E /* GrosPate */ = {
+			isa = PBXGroup;
+			children = (
+				29865FE91FDE7EA7009F145E /* DatabaseGrosPate.swift */,
+			);
+			path = GrosPate;
 			sourceTree = "<group>";
 		};
 		299244101FCC1C01009D1476 = {
@@ -99,6 +126,8 @@
 		2992441B1FCC1C01009D1476 /* IOS-retest */ = {
 			isa = PBXGroup;
 			children = (
+				29865FE81FDE7E72009F145E /* GrosPate */,
+				290EE1251FD58081005EDE6F /* Manager */,
 				2992442E1FCC1D68009D1476 /* ViewController */,
 				2973D04E1FD53EB900E74BA6 /* Cells */,
 				2973D0511FD5444E00E74BA6 /* Model */,
@@ -107,6 +136,8 @@
 				299244231FCC1C02009D1476 /* Assets.xcassets */,
 				299244251FCC1C02009D1476 /* LaunchScreen.storyboard */,
 				299244281FCC1C02009D1476 /* Info.plist */,
+				29865FEB1FDE8CDB009F145E /* GoogleService-Info.plist */,
+				29865FE51FDE797C009F145E /* Model.xcdatamodeld */,
 			);
 			path = "IOS-retest";
 			sourceTree = "<group>";
@@ -196,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				299244271FCC1C02009D1476 /* LaunchScreen.storyboard in Resources */,
+				29865FEC1FDE8CDC009F145E /* GoogleService-Info.plist in Resources */,
 				299244241FCC1C02009D1476 /* Assets.xcassets in Resources */,
 				299244221FCC1C02009D1476 /* Main.storyboard in Resources */,
 			);
@@ -227,10 +259,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-IOS-retest/Pods-IOS-retest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -270,7 +310,11 @@
 				299FF19F1FCC5DA7004F7879 /* GrantedViewController.swift in Sources */,
 				2973D0501FD53ED300E74BA6 /* SerieTableViewCell.swift in Sources */,
 				2973D0531FD5447500E74BA6 /* Serie.swif.swift in Sources */,
+				290EE1271FD58095005EDE6F /* UserManager.swift in Sources */,
 				2992441D1FCC1C02009D1476 /* AppDelegate.swift in Sources */,
+				290EE1291FD58677005EDE6F /* User.swift in Sources */,
+				29865FE71FDE797C009F145E /* Model.xcdatamodeld in Sources */,
+				29865FEA1FDE7EA7009F145E /* DatabaseGrosPate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +499,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		29865FE51FDE797C009F145E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				29865FE61FDE797C009F145E /* Model.xcdatamodel */,
+			);
+			currentVersion = 29865FE61FDE797C009F145E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 299244111FCC1C01009D1476 /* Project object */;
 }
